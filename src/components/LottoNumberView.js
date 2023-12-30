@@ -25,7 +25,17 @@ export const LottoNumberView = (props) => {
         <View style={{ flex:1, flexDirection:'row', alignItems:'center', justifyContent:'space-between' }}>
             {props.numbers.map((item) => {
                 return (
-                    <View style={{ backgroundColor:getNumberBackgroundColor(), width:40, height:40, borderRadius:20, alignItems:'center', justifyContent:'center' }}>
+                    <View 
+                        style={{ 
+                            backgroundColor:getNumberBackgroundColor(), 
+                            width:40, 
+                            height:40, 
+                            borderRadius:20, 
+                            alignItems:'center', 
+                            justifyContent:'center' 
+                        }}
+                        key={item}
+                    >
                         <Typography fontSize={20} color='white'>
                             {item}
                         </Typography>
