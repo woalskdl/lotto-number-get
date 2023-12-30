@@ -31,10 +31,10 @@ export const HistoryListScreen = (props) => {
                                 height:120, 
                                 backgroundColor:'white' 
                             }}
-                            key={item.idx}
+                            key={item}
                         >
                             <Typography fontSize={16}>
-                                {item.date.getFullYear()}. {item.date.getMonth()}. {item.date.getDay()}
+                                {`${item.date.getFullYear()}. ${item.date.getMonth()}. ${item.date.getDay()}`}
                             </Typography>
                             <LottoNumberView numbers={item.numbers}/>
                         </View>
